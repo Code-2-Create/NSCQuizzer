@@ -690,6 +690,12 @@ def render_result_page() -> None:
                 st.write(f"Explanation: {review['explanation']}")
 
 
+def render_footer() -> None:
+    st.markdown("---")
+    st.caption("Developed by Vinayak Sen, NCC NAVAL WING")
+    st.caption("1 MP Naval Unit Bhopal")
+
+
 def main() -> None:
     init_session_state()
 
@@ -699,6 +705,7 @@ def main() -> None:
         render_result_page()
     else:
         render_home_page()
+        render_footer()
 
 
 if __name__ == "__main__":
